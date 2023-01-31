@@ -31,7 +31,7 @@ html{
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
     position: relative;
 }
-.top, .bottom, .flip-card.flip::before, .flip-card.flip::after{
+.top, .bottom, .flip-card.flip::before, .flip-card.flip .bottom-flip{
     height: .75em;
     line-height: 1;
     padding: .25em;
@@ -43,7 +43,7 @@ html{
     border-top-left-radius: .1em;
     border-top-right-radius: .1em;
 }
-.bottom, .flip-card.flip::after{
+.bottom, .flip-card.flip .bottom-flip{
     background-color: hsl(236, 21%, 26%);
     display: flex;
     align-items: flex-end;
@@ -57,7 +57,7 @@ html{
     animation: flip-top 250ms ease-in;
     transform-origin: bottom;
 }
-.flip-card.flip::after{
+.flip-card.flip .bottom-flip{
     content: attr(data-next-number);
     position: absolute;
     bottom: 0;
