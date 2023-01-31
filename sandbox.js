@@ -7,7 +7,7 @@ topFlip.classList.add('top-flip');
 const bottomFlip = document.createElement('div')
 bottomFlip.classList.add('bottom-flip');
 top.textContent = currentNumber;
-bottom.textContent = currentNumber;
+bottomHalf.textContent = currentNumber;
 
 flipCard.dataset.currentNumber = currentNumber;
 flipCard.dataset.nextNumber = currentNumber - 1;
