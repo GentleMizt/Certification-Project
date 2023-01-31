@@ -10,18 +10,3 @@ bottomFlip.classList.add('bottom-flip');
 top.textContent = startNumber;
 bottomHalf.textContent = startNumber;
 
-topFlip.textContent = startNumber -1;
-bottomFlip.textContent = startNumber - 1;
-
-topFlip.addEventListener('animationstart', e =>{
-    topHalf.textContent = startNumber - 1;
-});
-topFlip.addEventListener('animationend', e =>{
-    topFlip.remove;
-});
-bottomFlip.addEventListener('animationend', e=>{
-    bottomHalf.textContent = startNumber - 1;
-    bottomFlip.remove;
-});
-
-flipCard.append(topFlip, bottomFlip);
