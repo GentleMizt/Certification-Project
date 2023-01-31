@@ -46,6 +46,13 @@ html{
     border-bottom-left-radius: .1em;
     border-bottom-right-radius: .1em;
 }
+.flip-card.flip::before{
+    content: "5";
+    height: 50%;
+}
+.flip-card.flip::after{
+
+}
 .hills{
     position: absolute;
     bottom: 0;
