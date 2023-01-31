@@ -25,13 +25,17 @@ html{
 .flip-card{
     /* border: 1px solid blue; */
     color: hsl(345, 95%, 68%);
+    display: inline-flex;
+    flex-direction: column;
     font-size: 5rem;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+    position: relative;
 }
 .top, .bottom{
     height: .75em;
     line-height: 1;
     padding: .25em;
+    overflow: hidden;
 }
 .top{
     background-color: hsl(235, 16%, 14%);
@@ -49,6 +53,12 @@ html{
 .flip-card.flip::before{
     content: "5";
     height: 50%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    line-height: 1;
+    padding: .25em;
+    background-color: red;
 }
 .flip-card.flip::after{
 
