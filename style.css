@@ -25,9 +25,13 @@ html{
 .flip-card{
     /* border: 1px solid blue; */
     color: hsl(345, 95%, 68%);
-    font-size: 2rem;}
+    font-size: 2rem;
+}
+.top, .bottom{
+    height: 50%;
+}
 .top{
-    background-color: hsl(236, 21%, 26%);
+    background-color: hsl(235, 16%, 14%);
 }
 .bottom{
     background-color: hsl(236, 21%, 26%);
