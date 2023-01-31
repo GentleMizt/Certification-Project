@@ -6,3 +6,5 @@ const flipCard = document.querySelector('.flip-card');
 flipCard.dataset.currentNumber = defNum;
 flipCard.dataset.nextNumber = defNum - 1;
 flipCard.classList.add('flip');
+flipCard.addEventListener('transitionstart')
+flipCard.addEventListener('transitionend')
