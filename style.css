@@ -52,13 +52,12 @@ html{
 }
 .flip-card.flip::before{
     content: "5";
-    height: 50%;
+    height: .75em;
     position: absolute;
     overflow: hidden;
     width: 100%;
     line-height: 1;
     padding: .25em;
-    background-color: red;
 }
 .flip-card.flip::after{
 
