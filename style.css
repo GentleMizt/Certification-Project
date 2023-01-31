@@ -30,19 +30,24 @@ html{
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
     position: relative;
 }
-.top, .bottom, .flip-card .top-flip, .flip-card .bottom-flip{
+.top,
+.bottom,
+.flip-card .top-flip,
+.flip-card .bottom-flip{
     height: .75em;
     line-height: 1;
     padding: .25em;
     overflow: hidden;
 }
-.top, .flip-card .top-flip{
+.top,
+.flip-card .top-flip{
     background-color: hsl(235, 16%, 14%);
     border-top-left-radius: .1em;
     border-top-right-radius: .1em;
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
-.bottom, .flip-card .bottom-flip{
+.bottom,
+.flip-card .bottom-flip{
     background-color: hsl(236, 21%, 26%);
     display: flex;
     align-items: flex-end;

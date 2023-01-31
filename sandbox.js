@@ -8,19 +8,19 @@ const bottomFlip = document.createElement('div')
 bottomFlip.classList.add('bottom-flip');
 
 top.textContent = startNumber;
-topHalf.textContent = startNumber;
 bottomHalf.textContent = startNumber;
 topFlip.textContent = startNumber;
 bottomFlip.textContent = startNumber - 1;
 
-topFlip.addEventListener('animationstart', e =>{
-    topHalf.textContent = startNumber - 1;
-})
-topFlip.addEventListener('animationend', e =>{
-    topHalf.remove;
-})
-bottomFlip.addEventListener('animationend', e =>{
-    bottomHalf.textContent = startNumber - 1;
-    bottomFlip.remove;
-})
-flipCard.append(topFlip, bottomFlip)
+// topFlip.addEventListener('animationstart', e =>{
+//     topHalf.textContent = startNumber - 1;
+// });
+// topFlip.addEventListener('animationend', e =>{
+//     topHalf.remove;
+// });
+// bottomFlip.addEventListener('animationend', e =>{
+//     bottomHalf.textContent = startNumber - 1;
+//     bottomFlip.remove;
+// });
+
+flipCard.append(topFlip, bottomFlip);
