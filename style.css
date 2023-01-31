@@ -23,7 +23,6 @@ html{
     width: 50%;    
 }
 .flip-card{
-    /* border: 1px solid blue; */
     color: hsl(345, 95%, 68%);
     display: inline-flex;
     flex-direction: column;
