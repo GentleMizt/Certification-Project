@@ -21,9 +21,11 @@ html{
     width: 100%;
 }
 .icon-div{
-  position: absolute;
-  bottom: 5rem;
-  z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5rem;
+    z-index: 1;
 }
 .icon-div img{
     width: 19%;
