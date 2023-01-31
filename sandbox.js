@@ -10,7 +10,7 @@ bottomFlip.classList.add('bottom-flip');
 top.textContent = currentNumber;
 bottomHalf.textContent = currentNumber;
 
-topFlip.textContent = currentNumber;
+topFlip.textContent = currentNumber - 1;
 bottomFlip.textContent = currentNumber - 1;
 
 topFlip.addEventListener('animationstart', e =>{
