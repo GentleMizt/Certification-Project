@@ -1,7 +1,7 @@
 const currentNumber = 9;
 const flipCard = document.querySelector('.flip-card');
-const top = flipCard.querySelector('.top');
-const bottom = flipCard.querySelector('.bottom');
+const topHalf = flipCard.querySelector('.top');
+const bottomHalf = flipCard.querySelector('.bottom');
 
 top.textContent = currentNumber;
 bottom.textContent = currentNumber;

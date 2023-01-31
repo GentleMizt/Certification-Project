@@ -31,14 +31,14 @@ html{
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
     position: relative;
 }
-.top, .bottom, .flip-card.flip::before, .flip-card.flip .bottom-flip{
+.top, .bottom, .flip-card.flip .top-flip, .flip-card.flip .bottom-flip{
     height: .75em;
     line-height: 1;
     padding: .25em;
     overflow: hidden;
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
-.top, .flip-card.flip::before{
+.top, .flip-card.flip .top-flip{
     background-color: hsl(235, 16%, 14%);
     border-top-left-radius: .1em;
     border-top-right-radius: .1em;
@@ -50,7 +50,7 @@ html{
     border-bottom-left-radius: .1em;
     border-bottom-right-radius: .1em;
 }
-.flip-card.flip::before{
+.flip-card.flip .top-flip{
     content: attr(data-current-number);
     position: absolute;
     width: 100%;
