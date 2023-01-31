@@ -13,6 +13,9 @@ html{
     background-color: hsl(234, 17%, 12%);
     position: relative;
 }
+.main-bg h2{
+    color: white;
+}
 .hills{
     position: absolute;
     bottom: 0;
