@@ -22,8 +22,9 @@ html{
 }
 .icon-div{
   position: absolute;
-  bottom: 3;  
+  bottom: 5rem;
+  z-index: 1;
 }
 .icon-div img{
-    width: 1.2%;
+    width: 19%;
 }
