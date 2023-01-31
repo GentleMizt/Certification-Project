@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 10px;
+}
 .main-bg{
     background-image: url(./images/bg-stars.svg);
     height: 100vh;
@@ -18,7 +21,8 @@
     width: 100%;
 }
 .icon-div{
-    
+  position: absolute;
+  bottom: 3;  
 }
 .icon-div img{
     width: 1.2%;
