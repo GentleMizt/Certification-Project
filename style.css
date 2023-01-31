@@ -25,6 +25,8 @@ html{
     justify-content: space-between;
     position: absolute;
     bottom: 5rem;
+    left: 48.5%;
+    transform: translateY(-50%);
     z-index: 1;
 }
 .icon-div img{
