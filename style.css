@@ -25,7 +25,8 @@ html{
 .flip-card{
     /* border: 1px solid blue; */
     color: hsl(345, 95%, 68%);
-    font-size: 2rem;
+    font-size: 5rem;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
 }
 .top, .bottom{
     height: .75em;
@@ -34,11 +35,16 @@ html{
 }
 .top{
     background-color: hsl(235, 16%, 14%);
+    border-top-left-radius: .1em;
+    border-top-right-radius: .1em;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .bottom{
     background-color: hsl(236, 21%, 26%);
     display: flex;
     align-items: flex-end;
+    border-bottom-left-radius: .1em;
+    border-bottom-right-radius: .1em;
 }
 .hills{
     position: absolute;
