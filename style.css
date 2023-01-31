@@ -4,5 +4,8 @@
     box-sizing: border-box;
 }
 .main-bg{
-    background-image: url(./images/);
+    background-image: url(./images/bg-stars.svg);
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(234, 17%, 12%);
 }
