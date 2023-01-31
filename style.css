@@ -16,6 +16,16 @@ html{
 .main-bg h2{
     color: white;
 }
+.card-container{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+.flip-card{
+    border: 1px solid blue;
+    color: hsl(345, 95%, 68%);
+    
+}
 .hills{
     position: absolute;
     bottom: 0;
