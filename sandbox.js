@@ -4,6 +4,27 @@ const flipCard = document.querySelector('.flip-card');
 
 flip(flipCard);
 
+// const countToDate = new Date('2022-12-02');
+// let previousTimeBetweenDates;
+// setInterval(()=>{
+//     const currentDate = new Date();
+//     const timeBetweenDate = Math.ceil((currentDate - countToDate)/1000);
+//     if (previousTimeBetweenDates !== timeBetweenDate) {
+//        flipAllCards(timeBetweenDate);
+//     }
+// }, 250);
+
+// function flipAllCards (time) {
+
+// }
+
+const countDown = new Date('Dec 16, 2022 00:00:00').getTime();
+let x = setInterval(()=>{
+
+},1000);
+
+
+
 function flip (flipCard){
     const topHalf = flipCard.querySelector('.top');
     const bottomHalf = flipCard.querySelector('.bottom');

@@ -36,8 +36,8 @@ html{
 }
 .flip-card{
     color: hsl(345, 95%, 68%);
-    /* display: inline-flex;
-    flex-direction: column; */
+    display: inline-flex;
+    flex-direction: column;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
     position: relative;
     flex-basis: 38%; 
@@ -49,8 +49,8 @@ html{
 .flip-card .top-flip,
 .flip-card .bottom-flip {
     height: .75em;
-    line-height: .8;
-    padding: .35em;
+    line-height: 1;
+    padding: .25em;
     overflow: hidden;
     font-size: 6rem;
 }
