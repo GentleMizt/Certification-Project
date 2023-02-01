@@ -20,6 +20,16 @@ flip(flipCard);
 
 const countDown = new Date('Dec 16, 2022 00:00:00').getTime();
 let x = setInterval(()=>{
+    let now = new Date().getTime();
+    let countToDate = countDown - now;
+
+    let days = Math.floor(countToDate/(1000 * 60 * 60 * 24));
+    let hours = Math.floor((countToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((countToDate % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((countToDate % (1000 * 60)) / 1000);
+
+
+
 
 },1000);
 
