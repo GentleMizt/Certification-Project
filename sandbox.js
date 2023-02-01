@@ -4,34 +4,40 @@ const flipCard = document.querySelector('.flip-card');
 
 flip(flipCard);
 
-// const countToDate = new Date('2022-12-02');
-// let previousTimeBetweenDates;
-// setInterval(()=>{
-//     const currentDate = new Date();
-//     const timeBetweenDate = Math.ceil((currentDate - countToDate)/1000);
-//     if (previousTimeBetweenDates !== timeBetweenDate) {
-//        flipAllCards(timeBetweenDate);
-//     }
-// }, 250);
+const countToDate = new Date('2022-12-02');
+let previousTimeBetweenDates;
+setInterval(()=>{
+    const currentDate = new Date();
+    const timeBetweenDate = Math.ceil((countToDate - currentDate) / 1000);
 
-// function flipAllCards (time) {
+    if (previousTimeBetweenDates !== timeBetweenDate) {
+       flipAllCards(timeBetweenDate);
+    }
 
-// }
+    previousTimeBetweenDates = timeBetweenDate;
+}, 250);
 
-const countDown = new Date('Dec 16, 2022 00:00:00').getTime();
-let x = setInterval(()=>{
-    let now = new Date().getTime();
-    let countToDate = countDown - now;
+function flipAllCards (time) {
+        let days = Math.floor(countToDate/(1000 * 60 * 60 * 24));
+        let hours = Math.floor((countToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((countToDate % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((countToDate % (1000 * 60)) / 1000);
+}
 
-    let days = Math.floor(countToDate/(1000 * 60 * 60 * 24));
-    let hours = Math.floor((countToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((countToDate % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((countToDate % (1000 * 60)) / 1000);
+// const countDown = new Date('Dec 16, 2022 00:00:00').getTime();
+// let x = setInterval(()=>{
+//     let now = new Date().getTime();
+//     let countToDate = countDown - now;
 
+//     let days = Math.floor(countToDate/(1000 * 60 * 60 * 24));
+//     let hours = Math.floor((countToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     let minutes = Math.floor((countToDate % (1000 * 60 * 60)) / (1000 * 60));
+//     let seconds = Math.floor((countToDate % (1000 * 60)) / 1000);
 
-
-
-},1000);
+    // document.querySelector('.days').innerHTML = days;
+    // document.getElementsByClassName('hours').innerHTML = hours;
+    // document.getElementsByClassName('minutes').innerHTML = minutes;
+    // document.getElementsByClassName('seconds').innerHTML = seconds;
 
 
 
