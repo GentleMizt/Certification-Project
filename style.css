@@ -19,38 +19,41 @@ html{
 }
 .card-container{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-between;
     width: 38%;  
-    /* margin: auto; */
     position: absolute;
-    top: calc(50% - 38.165px);
-    left: calc(50% -243.2px);
+    top: 35%;
+    left: 30%;
 }
 .flip-card{
     color: hsl(345, 95%, 68%);
-    display: inline-flex;
-    flex-direction: column;
-    font-size: 5rem;
-    /* box-shadow: 0 2px 3px 0 rgba(0,0,0,.5); */
+    /* display: inline-flex;
+    flex-direction: column; */
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
     position: relative;
+    flex-basis: 22%; 
 }
 .top,
 .bottom,
 .flip-card .top-flip,
 .flip-card .bottom-flip {
     height: .75em;
-    line-height: 1;
-    padding: .25em;
+    line-height: .8;
+    padding: .35em;
     overflow: hidden;
-}
+    font-size: 6rem;
 
+    /* border: 1px solid blue; */
+    /* text-align: center; */
+}
 .top,
 .flip-card .top-flip {
     background-color: hsl(235, 16%, 14%);
     border-top-right-radius: .1em;
     border-top-left-radius: .1em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
 }
 
 .bottom,
@@ -76,6 +79,7 @@ html{
     animation: flip-bottom 250ms ease-out 250ms;
     transform-origin: top;
     transform: rotateX(90deg);
+    
   }
 
 .hills{
@@ -99,6 +103,16 @@ html{
 
 .icon-div img{
     width: 19%;
+}
+.card-txts{
+    display: flex;
+    color: white;
+    width: 38%;
+    justify-content: space-between;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 30%;
 }
 
 
