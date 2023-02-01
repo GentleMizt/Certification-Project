@@ -19,6 +19,10 @@ html{
 .main-bg h2{
     color: white;
     text-align: center;
+    padding-top: 12rem;
+    letter-spacing: 2px;
+    word-spacing: 1.5px;
+    font-weight: 600;
 }
 .card-container{
     display: flex;
