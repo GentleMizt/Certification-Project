@@ -17,11 +17,20 @@ setInterval(()=>{
     previousTimeBetweenDates = timeBetweenDate;
 }, 250);
 
-function flipAllCards (time) {
-        let days = Math.floor(countToDate/(1000 * 60 * 60 * 24));
-        let hours = Math.floor((countToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((countToDate % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((countToDate % (1000 * 60)) / 1000);
+function flipAllCards (countToDate) {
+    let days = Math.floor(countToDate/(1000 * 60 * 60 * 24));
+    let hours = Math.floor((countToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((countToDate % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((countToDate % (1000 * 60)) / 1000);
+
+    flip(document.querySelector('[data-days-tens]'));
+    flip(document.querySelector('[data-days-ones]'));
+    flip(document.querySelector('[data-hours-tens]'));
+    flip(document.querySelector('[data-hours-ones]'));
+    flip(document.querySelector('[data-minutes-tens]'));
+    flip(document.querySelector('[data-minutes-ones]'));
+    flip(document.querySelector('[data-seconds-tens]'));
+    flip(document.querySelector('[data-seconds-tens]'));
 }
 
 // const countDown = new Date('Dec 16, 2022 00:00:00').getTime();
@@ -41,28 +50,31 @@ function flipAllCards (time) {
 
 
 
-function flip (flipCard){
+function flip (flipCard, newNumber){
     const topHalf = flipCard.querySelector('.top');
+    const startNumber = parseInt(topHalf.textContent);
+
+    if (newNumber === startNumber) return;
+
     const bottomHalf = flipCard.querySelector('.bottom');
     const topFlip = document.createElement('div')
     topFlip.classList.add('top-flip');
     const bottomFlip = document.createElement('div');
     bottomFlip.classList.add('bottom-flip');
-    const startNumber = parseInt(topHalf.textContent);
 
     top.textContent = startNumber
     bottomHalf.textContent = startNumber;
     topFlip.textContent = startNumber;
-    bottomFlip.textContent = startNumber - 1;
+    bottomFlip.textContent = newNumber;
 
     topFlip.addEventListener('animationstart', e =>{
-        topHalf.textContent = startNumber - 1;
+        topHalf.textContent = newNumber;
     });
     topFlip.addEventListener('animationend', e =>{
         topFlip.remove();
     });
     bottomFlip.addEventListener('animationend', e =>{
-        bottomHalf.textContent = startNumber - 1;
+        bottomHalf.textContent = newNumber;
         bottomFlip.remove();
         // flip(flipCard);
     });
