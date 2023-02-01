@@ -109,10 +109,15 @@ html{
     color: white;
     width: 38%;
     justify-content: space-between;
-    border: 1px solid red;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 30%;
+    /* border: 1px solid red; */
+}
+.flip-txt{
+    text-align: center;
+    /* border: 1px solid blue; */
+    flex-basis: 18%;
 }
 
 
