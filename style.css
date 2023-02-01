@@ -15,15 +15,14 @@ html{
 }
 .main-bg h2{
     color: white;
+    text-align: center;
 }
 .card-container{
     display: flex;
     border: 1px solid red;
     justify-content: space-around;
-    width: 65%;  
+    width: 40%;  
     margin: auto;
-    position: absolute;
-    
 }
 .flip-card{
     color: hsl(345, 95%, 68%);
