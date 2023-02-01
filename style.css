@@ -20,16 +20,19 @@ html{
 .card-container{
     display: flex;
     border: 1px solid red;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 40%;  
     margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 30%;
 }
 .flip-card{
     color: hsl(345, 95%, 68%);
     display: inline-flex;
     flex-direction: column;
     font-size: 5rem;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+    /* box-shadow: 0 2px 3px 0 rgba(0,0,0,.5); */
     position: relative;
 }
 .top,
@@ -38,7 +41,7 @@ html{
 .flip-card .bottom-flip {
     height: .75em;
     line-height: 1;
-    padding: .25em;
+    padding: .3em;
     overflow: hidden;
 }
 
