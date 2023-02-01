@@ -21,11 +21,11 @@ html{
     display: flex;
     border: 1px solid red;
     justify-content: space-between;
-    width: 40%;  
-    margin: auto;
+    width: 38%;  
+    /* margin: auto; */
     position: absolute;
-    top: 35%;
-    left: 30%;
+    top: calc(50% - 38.165px);
+    left: calc(50% -243.2px);
 }
 .flip-card{
     color: hsl(345, 95%, 68%);
@@ -41,7 +41,7 @@ html{
 .flip-card .bottom-flip {
     height: .75em;
     line-height: 1;
-    padding: .3em;
+    padding: .25em;
     overflow: hidden;
 }
 
