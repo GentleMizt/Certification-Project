@@ -1,7 +1,7 @@
 const startNumber = 4;
 
 const flipCard = document.querySelector('.flip-card');
-
+flip(flipCard);
 function flip (flipCard){
     const topHalf = flipCard.querySelector('.top');
     const bottomHalf = flipCard.querySelector('.bottom');
@@ -26,6 +26,6 @@ function flip (flipCard){
         bottomHalf.textContent = startNumber - 1;
         bottomFlip.remove();
     });
-    
     flipCard.append(topFlip, bottomFlip);
+    // flip(flipCard);
 }
