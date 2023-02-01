@@ -2,18 +2,14 @@
 
 const flipCard = document.querySelector('.flip-card');
 
-flip(flipCard);
 
-const countToDate = new Date('2022-12-02');
+// const countToDate = new Date('2022-12-02');
+const countDown = new Date('Dec 16, 2022 00:00:00').getTime();
 let previousTimeBetweenDates;
 setInterval(()=>{
     const currentDate = new Date();
-    const timeBetweenDate = Math.ceil((countToDate - currentDate) / 1000);
-
-    if (previousTimeBetweenDates !== timeBetweenDate) {
-       flipAllCards(timeBetweenDate);
-    }
-
+    const timeBetweenDate = Math.ceil((countDown - currentDate) / 1000);
+    flipAllCards(timeBetweenDate);
     previousTimeBetweenDates = timeBetweenDate;
 }, 250);
 
@@ -23,14 +19,14 @@ function flipAllCards (countToDate) {
     let minutes = Math.floor((countToDate % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((countToDate % (1000 * 60)) / 1000);
 
-    flip(document.querySelector('[data-days-tens]'));
-    flip(document.querySelector('[data-days-ones]'));
-    flip(document.querySelector('[data-hours-tens]'));
-    flip(document.querySelector('[data-hours-ones]'));
-    flip(document.querySelector('[data-minutes-tens]'));
-    flip(document.querySelector('[data-minutes-ones]'));
-    flip(document.querySelector('[data-seconds-tens]'));
-    flip(document.querySelector('[data-seconds-tens]'));
+    flip(document.querySelector('[data-days-tens]'), Math.floor(days / 10));
+    flip(document.querySelector('[data-days-ones]'), days % 10);
+    flip(document.querySelector('[data-hours-tens]'), Math.floor(hours / 10));
+    flip(document.querySelector('[data-hours-ones]'), hours % 10);
+    flip(document.querySelector('[data-minutes-tens]'), Math.floor(minutes / 10));
+    flip(document.querySelector('[data-minutes-ones]'), minutes % 10);
+    flip(document.querySelector('[data-seconds-tens]'), Math.floor(seconds / 10));
+    flip(document.querySelector('[data-seconds-tens]'), seconds % 10);
 }
 
 // const countDown = new Date('Dec 16, 2022 00:00:00').getTime();
@@ -53,7 +49,6 @@ function flipAllCards (countToDate) {
 function flip (flipCard, newNumber){
     const topHalf = flipCard.querySelector('.top');
     const startNumber = parseInt(topHalf.textContent);
-
     if (newNumber === startNumber) return;
 
     const bottomHalf = flipCard.querySelector('.bottom');
