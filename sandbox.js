@@ -1,4 +1,4 @@
-const startNumber = 4;
+// const startNumber = 4;
 
 const flipCard = document.querySelector('.flip-card');
 
