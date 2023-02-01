@@ -1,5 +1,5 @@
 const countDown = () =>{
-    const oldDate = new Date('Jan 31, 2023 00:00:00').getTime();
+    const oldDate = new Date('Dec 31, 2022 00:00:00').getTime();
     const now = new Date().getTime();
     const diff = now - oldDate;
 
@@ -8,12 +8,21 @@ const countDown = () =>{
     const hrs =  mins * 60;
     const days = hrs * 24;
 
-    const timeDays = Math.floor(diff / days);
-    const timeHours = Math.floor((diff % days) / hrs);
-    const timeMinutes = Math.floor((diff % hrs) / mins)
-    const timeSeconds = Math.floor((diff % mins) / secs)
+   let timeDays = Math.floor(diff / days);
+   let timeHours = Math.floor((diff % days) / hrs);
+   let timeMinutes = Math.floor((diff % hrs) / mins)
+   let timeSeconds = Math.floor((diff % mins) / secs)
 
-    
-    console.log(timeDays, timeHours, timeMinutes, timeSeconds);
+    timeDays = timeDays < 10 ? '0' + timeDays : timeDays;
+    timeHours = timeHours < 10 ? '0' + timeHours : timeHours;
+    timeMinutes = timeMinutes < 10 ? '0' + timeMinutes : timeMinutes;
+    timeSeconds = timeSeconds < 10 ? '0' + timeSeconds : timeSeconds;
+
+    document.getElementById('days').innerHTML = timeDays;
+    document.getElementById('hours').innerHTML = timeHours;
+    document.getElementById('minutes').innerHTML = timeMinutes;
+    document.getElementById('seconds').innerHTML = timeSeconds;
+
+    setInterval(countDown, 1000);
 }
 countDown();
