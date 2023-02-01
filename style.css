@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 *, *::before, *::after{
     padding: 0;
     margin: 0;
@@ -5,6 +6,7 @@
 }
 html{
     font-size: 10px;
+    font-family: 'Red Hat Text', sans-serif;
 }
 .main-bg{
     background-image: url(./images/bg-stars.svg);
@@ -19,9 +21,9 @@ html{
 }
 .card-container{
     display: flex;
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
     justify-content: space-between;
-    width: 38%;  
+    width: 40%;  
     position: absolute;
     top: 35%;
     left: 30%;
@@ -32,7 +34,9 @@ html{
     flex-direction: column; */
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
     position: relative;
-    flex-basis: 22%; 
+    flex-basis: 38%; 
+    margin-right: 1.5rem;
+    /* border: 1px solid red; */
 }
 .top,
 .bottom,
