@@ -16,24 +16,49 @@ html{
     background-color: hsl(234, 17%, 12%);
     position: relative;
 }
-.main-bg h2{
-    color: white;
-    padding-top: 12rem;
-    letter-spacing: 2px;
-    word-spacing: 1.5px;
-    font-weight: 600;
-}
+
 .card-container{
     display: flex;
-    /* border: 1px solid blue; */
-    justify-content: space-between;
-    width: 40%;  
-    position: absolute;
-    top: 35%;
-    left: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-weight: 700;
+    min-height: 70vh;
 }
 
+
+.card-container h2{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 3.3rem;
+}
+
+.flip-card{
+    margin: 1rem;
+}
+
+.card-countdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-countdown p{
+    padding: 2rem;
+    background-color: hsl(236, 21%, 26%);
+    border-radius: .5rem;
+    color: hsl(345, 95%, 68%);
+    font-size: 3.5rem;
+}
+
+.card-countdown h3{
+    color: hsl(237, 18%, 59%);
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    letter-spacing: 2px;
+}
 
 .hills{
     position: absolute;
