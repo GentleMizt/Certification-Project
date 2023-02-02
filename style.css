@@ -49,7 +49,7 @@ html{
 
 .card-countdown p{
     padding: 2rem;
-    background-color: hsl(236, 21%, 26%);
+    background: linear-gradient(hsl(228, 25%, 19%) 50%, hsl(236, 21%, 26%) 50%);
     border-radius: .5rem;
     color: hsl(345, 95%, 68%);
     font-size: 3.5rem;
