@@ -114,6 +114,10 @@ html{
     .card-container{
         padding: 0 2rem;
     }
+    .card-container h2{
+        font-size: 2.8rem;
+        text-align: center;
+    }
     .card-countdown{
         flex-wrap: nowrap;
         width: 100%;
