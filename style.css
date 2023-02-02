@@ -159,7 +159,9 @@ html{
 
     }
     .icon-div{
-        bottom: 2rem;
+        bottom: 1.5rem;
     }
-    
+    .icon-div img{
+        width: 15%;
+    }
 }
