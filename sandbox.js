@@ -23,6 +23,6 @@ const countDown = () =>{
     document.getElementById('minutes').innerHTML = timeMinutes;
     document.getElementById('seconds').innerHTML = timeSeconds;
 
-    setInterval(countDown, 250);
+    setInterval(countDown, 1000);
 }
 countDown();

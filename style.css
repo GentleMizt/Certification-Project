@@ -47,12 +47,29 @@ html{
     text-align: center;
 }
 
+
 .card-countdown p{
     padding: 2rem;
     background: linear-gradient(hsl(228, 25%, 19%) 50%, hsl(236, 21%, 26%) 50%);
     border-radius: .5rem;
     color: hsl(345, 95%, 68%);
     font-size: 3.5rem;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-countdown p::after{
+    position: absolute;
+    content: '';
+    width: 8%;
+    height: 10%;
+    left: 0px;
+    top: 44%;
+    bottom: 1rem;
+    z-index: 999;
+    background-color: hsl(234, 17%, 12%);
+    border: 1px solid red;
 }
 
 .card-countdown h3{
