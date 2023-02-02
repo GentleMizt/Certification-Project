@@ -26,3 +26,8 @@ const countDown = () =>{
     setInterval(countDown, 1000);
 }
 countDown();
+
+let faceBook = document.getElementById('facebook');
+faceBook.addEventListener('click', ()=>{
+    
+})
