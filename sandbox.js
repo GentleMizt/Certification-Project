@@ -27,7 +27,16 @@ const countDown = () =>{
 }
 countDown();
 
-let faceBook = document.getElementById('facebook');
 faceBook.addEventListener('click', ()=>{
-    
+    faceBook.src = 'pathfigma.png';
 })
+let faceBook = document.getElementById('facebook');
+    faceBook.onmouseover = mouseOver;
+    faceBook.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      faceBook.src = "Pathsvg.svg";
+    }
+    function mouseOut() { 
+      faceBook.src = "icon-facebook.svg";
+    }
