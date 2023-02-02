@@ -64,12 +64,23 @@ html{
     content: '';
     width: 8%;
     height: 10%;
-    left: 0px;
-    top: 44%;
+    left: 0;
+    top: 43.5%;
     bottom: 1rem;
-    z-index: 999;
     background-color: hsl(234, 17%, 12%);
-    border: 1px solid red;
+    border-radius: 0 50% 80% 0;
+}
+
+.card-countdown p::before{
+    position: absolute;
+    content: '';
+    width: 8%;
+    height: 10%;
+    right: 0px;
+    top: 43.5%;
+    bottom: 1rem;
+    background-color: hsl(234, 17%, 12%);
+    border-radius: 50% 0 0 80%;
 }
 
 .card-countdown h3{
