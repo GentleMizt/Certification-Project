@@ -158,9 +158,8 @@ html{
         margin: .5rem;
 
     }
-    .hills img{
-        width: 100%;
-        max-height: 20rem;
+    .icon-div{
+        bottom: 2rem;
     }
     
 }
