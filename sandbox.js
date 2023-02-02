@@ -1,7 +1,7 @@
 const countDown = () =>{
-    const oldDate = new Date('Dec 31, 2022 00:00:00').getTime();
+    const oldDate = new Date('Mar 01 2023 00:00:00').getTime();
     const now = new Date().getTime();
-    const diff = now - oldDate;
+    const diff = oldDate - now;
 
     const secs = 1000;
     const mins = secs * 60;
@@ -23,6 +23,6 @@ const countDown = () =>{
     document.getElementById('minutes').innerHTML = timeMinutes;
     document.getElementById('seconds').innerHTML = timeSeconds;
 
-    setInterval(countDown, 1000);
+    setInterval(countDown, 250);
 }
 countDown();

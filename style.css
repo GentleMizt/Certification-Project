@@ -19,7 +19,7 @@ html{
 
 .card-container{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -83,4 +83,44 @@ html{
 
 .icon-div img{
     width: 19%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 414px){
+    .card-container{
+        padding: 0 2rem;
+    }
+    .card-countdown{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .flip-card{
+        width: 80%;
+        margin: .5rem;
+
+    }
 }
