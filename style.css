@@ -35,9 +35,6 @@ html{
     margin-bottom: 3.3rem;
 }
 
-.flip-card{
-    margin: 1rem;
-}
 
 .card-countdown{
     display: flex;
@@ -45,8 +42,13 @@ html{
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    border: 1px solid blue;
 }
 
+.flip-card{
+    margin: 1rem;
+    border: 1px solid red;
+}
 
 .card-countdown p{
     padding: 2rem;
@@ -57,6 +59,8 @@ html{
     cursor: pointer;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid white;
+    width: 100%;
 }
 
 .card-countdown p::after{
