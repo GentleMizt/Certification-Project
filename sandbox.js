@@ -28,13 +28,13 @@ const countDown = () =>{
 countDown();
 
 
-// let faceBook = document.getElementById('facebook');
-// faceBook.onmouseover = mouseOver;
-// faceBook.onmouseout = mouseOut;
+let faceBook = document.getElementById('facebook');
+faceBook.onmouseover = mouseOver;
+faceBook.onmouseout = mouseOut;
 
-// function mouseOver() { 
-//     faceBook.src = "Pathsvg.svg";
-// }
-// function mouseOut() { 
-//     faceBook.src = "icon-facebook.svg";
-// }
+function mouseOver() { 
+    faceBook.src = "images/Pathsvg.svg";
+}
+function mouseOut() { 
+    faceBook.src = "images/icon-facebook.svg";
+}
