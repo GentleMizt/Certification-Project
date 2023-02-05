@@ -46,8 +46,9 @@ html{
 }
 
 .flip-card{
-    margin: 1rem;
+    /* margin: 1rem; */
     border: 1px solid red;
+    width: 10rem;
 }
 
 .card-countdown p{
